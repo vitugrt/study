@@ -1,4 +1,4 @@
-package Condicoes;
+package Conditions;
 
 public class IfElse {
 }

@@ -1,6 +1,6 @@
-package Desafios;
+package Challenges;
 
-public class Desafio1 {
+public class Challenge1 {
     public static void main(String[] args) {
 
         //ninja 1

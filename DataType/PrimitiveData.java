@@ -1,6 +1,6 @@
-package TiposDeDados;
+package DataType;
 
-public class dadosPrimitivos {
+public class PrimitiveData {
     public static void main(String[] args) {
         int idade = 123;
         double altura = 1.45;

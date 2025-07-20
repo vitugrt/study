@@ -1,8 +1,6 @@
-package Condicoes;
+package Conditions;
 
-import java.util.Scanner;
-
-public class ScannerDoUsuario {
+public class Scanner {
     public static void main(String[] args) {
         /*
          * Scaner é um jeito de trazer o usuario para dentro da aplicação
@@ -11,7 +9,7 @@ public class ScannerDoUsuario {
 
 
         //Abrir Scanner
-        Scanner caixaDeTexto = new Scanner(System.in);
+        java.util.Scanner caixaDeTexto = new java.util.Scanner(System.in);
 
         //Atribuir nome ao ninja
         System.out.println("Escreva aqui o nome do ninja:");

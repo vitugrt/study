@@ -1,6 +1,6 @@
-package TiposDeDados;
+package DataType;
 
-public class dadosNaoPrimitivos {
+public class NonPrimitiveData {
     public static void main(String[] args) {
         /*
         *  dados nao primitivos: array, class
