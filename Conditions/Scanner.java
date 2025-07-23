@@ -3,21 +3,21 @@ package Conditions;
 public class Scanner {
     public static void main(String[] args) {
         /*
-         * Scaner é um jeito de trazer o usuario para dentro da aplicação
-         * Objetivo: usuario criar um ninja e os dados serem avaliados
+         * Scaner input method
+         * Objetivo: user will create a ninja
          * */
 
 
         //Abrir Scanner
-        java.util.Scanner caixaDeTexto = new java.util.Scanner(System.in);
+        java.util.Scanner text = new java.util.Scanner(System.in);
 
         //Atribuir nome ao ninja
         System.out.println("Escreva aqui o nome do ninja:");
-        String nomeDoNinja = caixaDeTexto.nextLine();
+        String nomeDoNinja = text.nextLine();
 
         //Atribuir idade ao ninja
         System.out.println("Escreva aqui a idade do ninja:");
-        int idadeDoNinja = caixaDeTexto.nextInt();
+        int idadeDoNinja = text.nextInt();
 
         System.out.println("O nome do ninja é: " + nomeDoNinja);
         System.out.println("A idade do ninja é: " + idadeDoNinja);
@@ -30,7 +30,7 @@ public class Scanner {
         }
 
         //Fechar o Scanner (não esquecer)
-        caixaDeTexto.close();
+        text.close();
 
     }
 
