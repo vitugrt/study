@@ -1,7 +1,7 @@
 package Challenges;
 
 public class Uchiha extends Ninja{
-    public void sharingan(){
-        System.out.println("Sharingan is being used");
+    public String sharingan(){
+        return "Sharingan is being used";
     }
 }

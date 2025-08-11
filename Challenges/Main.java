@@ -3,19 +3,16 @@ package Challenges;
 public class Main {
     public static void main(String[] args) {
 
-        Ninja Naruto = new Ninja();
-        Naruto.name = "";
-        Naruto.age = 16;
-        Naruto.mission = "Rescue Sasuke";
-        Naruto.missionRank = 'S';
-        Naruto.missionStatus = false;
-
         Uchiha Sasuke = new Uchiha();
-        Sasuke.name = "";
+        Sasuke.name = "Sasuke Uchiha";
         Sasuke.age = 16;
-        Sasuke.mission = "Rescue Sasuke";
+        Sasuke.mission = "Escape Konoha";
         Sasuke.missionRank = 'S';
-        Sasuke.missionStatus = false;
+        Sasuke.missionStatus = true;
 
+        Sasuke.showInfo();
+
+        String dojutsu = Sasuke.sharingan();
+        System.out.println(dojutsu);
     }
 }
