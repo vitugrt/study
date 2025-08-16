@@ -13,7 +13,9 @@ public class Main {
         String village2 = "Konoha";
         int age2 = 16;
 
-        //how can i create a great amount of ninja? class!
+        //how can i create a great amount of ninja? objects!
+
+        //object 1
         Ninja Naruto = new Ninja();
         Naruto.name = "Naruto Uzumaki";
         Naruto.village = "Konoha";
@@ -23,21 +25,45 @@ public class Main {
         String shouting = Naruto.hokage();
         System.out.println(shouting);
 
-        int howManyYears =Naruto.ageToBeHokage( 70);
+        //calling the int method
+        int howManyYears = Naruto.ageToBeHokage( 70);
         System.out.println("But I'm just " + Naruto.age + " years and I have left "  + howManyYears + " years");
 
-        Ninja Sasuke = new Ninja();
+        //object 2
+        Uchiha Sasuke = new Uchiha();
         Sasuke.name = "Sasuke Uchiha";
         Sasuke.village = "Konoha";
         Sasuke.age = 18;
+        Sasuke.shariganON();
 
         //calling the method
-        Sasuke.SharinganON();
+        Sasuke.chakra();
 
+        //object 3
         Ninja Sakura = new Ninja();
         Sakura.name = "Sakura Haruno";
         Sakura.village = "Konoha";
         Sakura.age = 18;
+        Sakura.chakra();
+
+        //object 4
+        Hyuga Hinata = new Hyuga();
+        Hinata.name = "Hinata Hyuga";
+        Hinata.village = "Konoha";
+        Hinata.age = 17;
+        String byakugan = Hinata.byakuganON();
+        System.out.println("My name is " + Hinata.name + " and my " + byakugan);
+        Hinata.chakra();
+
+        //object 5 (interface)
+        Boruto Boruto = new Boruto();
+        Boruto.name = "Boruto Uzumaki";
+        Boruto.age = 9;
+        Boruto.village = "Konoha";
+        Boruto.activateKarma();
+        Boruto.activateJougan();
+        Boruto.byakuganON();
+        Boruto.chakra();
 
     }
 }

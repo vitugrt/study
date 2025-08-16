@@ -8,8 +8,8 @@ public class Ninja {
     int age;
 
     //creating a public personalized method
-    public void SharinganON(){
-        System.out.println("Sharigan is being used!");
+    public void chakra(){
+        System.out.println("Chakra is being used!");
     };
 
     //string method that will return a string
