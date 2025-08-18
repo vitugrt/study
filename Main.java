@@ -16,10 +16,11 @@ public class Main {
         //how can i create a great amount of ninja? objects!
 
         //object 1
-        Ninja Naruto = new Ninja();
+        Uzumaki Naruto = new Uzumaki();
         Naruto.name = "Naruto Uzumaki";
         Naruto.village = "Konoha";
         Naruto.age = 17;
+        Naruto.chakra();
 
         //calling the string method
         String shouting = Naruto.hokage();
