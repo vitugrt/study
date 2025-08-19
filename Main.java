@@ -66,5 +66,14 @@ public class Main {
         Boruto.byakuganON();
         Boruto.chakra();
 
+        //
+        Hokage Hashirama = new Hokage();
+        Hashirama.name = "Hashirama Senju";
+
+        Hokage Tobirama = new Hokage("Tobirama", 40, false);
+        System.out.println(Tobirama.name);
+        System.out.println(Tobirama.age);
+        System.out.println(Tobirama.alive);
+
     }
 }
