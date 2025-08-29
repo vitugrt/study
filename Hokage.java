@@ -1,9 +1,11 @@
 package IntermediateLevel;
 
-public class Hokage {
+public abstract class Hokage {
     String name;
     int age;
     boolean alive;
+
+    public abstract void wisdom();
 
     public Hokage(){
         //empty constructor, no args
