@@ -1,9 +1,11 @@
 package IntermediateLevel;
 
 public abstract class Hokage {
+    //used to as "primary" class
     String name;
     int age;
     boolean alive;
+
 
     public abstract void wisdom();
 
