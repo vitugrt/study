@@ -4,17 +4,22 @@ public class Main {
     public static void main(String[] args) {
 
         //object from Uzumaki
-        Uzumaki Naruto = new Uzumaki();
-        Naruto.name = "Naruto Uzumaki";
-        Naruto.age = 16;
-        Naruto.specialAbility();
-        Naruto.strategy();
+        Uzumaki naruto = new Uzumaki();
+        naruto.name = "Naruto Uzumaki";
+        naruto.age = 16;
+        naruto.specialAbility();
+        //you use the interface so you don't have to implent in every class
+        //you are implementing in abstract class and extending only the class
+        naruto.strategy();
+        naruto.strategyAdvanced();
 
         //object from Uchiha
-        Uchiha Sasuke = new Uchiha();
-        Sasuke.name = "Sasuke Uchiha";
-        Sasuke.age = 17;
-        Sasuke.specialAbility();
-        Sasuke.strategy();
+        Uchiha sasuke = new Uchiha();
+        sasuke.name = "Sasuke Uchiha";
+        sasuke.age = 17;
+        sasuke.specialAbility();
+        sasuke.strategy();
+        sasuke.strategyAdvanced();
+
     }
 }

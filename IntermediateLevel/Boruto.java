@@ -1,6 +1,6 @@
 package IntermediateLevel;
 
-public class Boruto extends Hyuga implements HyugaUzumaki{
+public class Boruto extends Hyuga implements HyugaUzumaki {
 
     public void activateKarma() {
         System.out.println("I'm a Hyuga and Uzumaki!");
