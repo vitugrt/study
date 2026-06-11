@@ -21,5 +21,9 @@ public class Main {
         sasuke.strategy();
         sasuke.strategyAdvanced();
 
+        //new object with super class
+        Uchiha itachi = new Uchiha("Itachi", 27, "Konoha");
+        itachi.specialAbility();
+
     }
 }

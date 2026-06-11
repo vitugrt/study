@@ -6,6 +6,18 @@ public abstract class Ninja implements Strategy{
     int age;
     String village;
 
+    //to use constructor on sasuke
+    public Ninja(){
+
+    }
+
+    //to use constructor on itachi
+    public Ninja(String name, int age, String village) {
+        this.name = name;
+        this.age = age;
+        this.village = village;
+    }
+
     //every ninja will have it
     public void specialAbility(){
         System.out.println("My name is " + name + " and that's my power");

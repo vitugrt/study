@@ -16,64 +16,64 @@ public class Main {
         //how can i create a great amount of ninja? objects!
 
         //object 1
-        Uzumaki Naruto = new Uzumaki();
-        Naruto.name = "Naruto Uzumaki";
-        Naruto.village = "Konoha";
-        Naruto.age = 17;
-        Naruto.chakra();
+        Uzumaki naruto = new Uzumaki();
+        naruto.name = "Naruto Uzumaki";
+        naruto.village = "Konoha";
+        naruto.age = 17;
+        naruto.chakra();
 
         //calling the string method
-        String shouting = Naruto.hokage();
+        String shouting = naruto.hokage();
         System.out.println(shouting);
 
         //calling the int method
-        int howManyYears = Naruto.ageToBeHokage( 70);
-        System.out.println("But I'm just " + Naruto.age + " years and I have left "  + howManyYears + " years");
+        int howManyYears = naruto.ageToBeHokage( 70);
+        System.out.println("But I'm just " + naruto.age + " years and I have left "  + howManyYears + " years");
 
         //object 2
-        Uchiha Sasuke = new Uchiha();
-        Sasuke.name = "Sasuke Uchiha";
-        Sasuke.village = "Konoha";
-        Sasuke.age = 18;
-        Sasuke.shariganON();
+        Uchiha sasuke = new Uchiha();
+        sasuke.name = "Sasuke Uchiha";
+        sasuke.village = "Konoha";
+        sasuke.age = 18;
+        sasuke.shariganON();
 
-        //calling the method
-        Sasuke.chakra();
+        //calling the method, overwritten
+        sasuke.chakra();
 
         //object 3
-        Ninja Sakura = new Ninja();
-        Sakura.name = "Sakura Haruno";
-        Sakura.village = "Konoha";
-        Sakura.age = 18;
-        Sakura.chakra();
+        Ninja sakura = new Ninja();
+        sakura.name = "Sakura Haruno";
+        sakura.village = "Konoha";
+        sakura.age = 18;
+        sakura.chakra();
 
-        //object 4
-        Hyuga Hinata = new Hyuga();
-        Hinata.name = "Hinata Hyuga";
-        Hinata.village = "Konoha";
-        Hinata.age = 17;
-        String byakugan = Hinata.byakuganON();
-        System.out.println("My name is " + Hinata.name + " and my " + byakugan);
-        Hinata.chakra();
+        //object 4(using heredity)
+        Hyuga hinata = new Hyuga();
+        hinata.name = "Hinata Hyuga";
+        hinata.village = "Konoha";
+        hinata.age = 17;
+        String byakugan = hinata.byakuganON();
+        System.out.println("My name is " + hinata.name + " and my " + byakugan);
+        hinata.chakra();
 
-        //object 5 (interface)
-        Boruto Boruto = new Boruto();
-        Boruto.name = "Boruto Uzumaki";
-        Boruto.age = 9;
-        Boruto.village = "Konoha";
-        Boruto.activateKarma();
-        Boruto.activateJougan();
-        Boruto.byakuganON();
-        Boruto.chakra();
+        //object 5(interface)
+        Boruto boruto = new Boruto();
+        boruto.name = "Boruto Uzumaki";
+        boruto.age = 9;
+        boruto.village = "Konoha";
+        boruto.activateKarma();
+        boruto.activateJougan();
+        boruto.byakuganON();
+        boruto.chakra();
 
-        //
-        Hokage Hashirama = new Hokage();
-        Hashirama.name = "Hashirama Senju";
+        //object 6(using constructors)
+        Senju tobirama = new Senju("Tobirama", 50, false);
+        System.out.println(tobirama.name);
+        System.out.println(tobirama.age);
+        System.out.println(tobirama.alive);
 
-        Hokage Tobirama = new Hokage("Tobirama", 40, false);
-        System.out.println(Tobirama.name);
-        System.out.println(Tobirama.age);
-        System.out.println(Tobirama.alive);
-
+        //object 7(class abstract) with no args
+        Senju hashirama = new Senju();
+        hashirama.wisdom();
     }
 }
