@@ -2,9 +2,13 @@ package IntermediateLevel2;
 
 //abstract so I can no longer use it as object
 public abstract class Ninja implements Strategy{
+    //TODO: add 2 new atributes missionNumber and rank
+
     String name;
     int age;
     String village;
+    int missionNumber;
+    TypeNinja rank;
 
     //to use constructor on sasuke
     public Ninja(){
@@ -16,6 +20,15 @@ public abstract class Ninja implements Strategy{
         this.name = name;
         this.age = age;
         this.village = village;
+    }
+
+    //TODO: constructor overwrite
+
+    //just the new atributes have to be declared
+    public Ninja(String name, int age, String village, int missionNumber, TypeNinja rank) {
+        this(name, age, village);   //override constructor
+        this.missionNumber = missionNumber;
+        this.rank = rank;
     }
 
     //every ninja will have it

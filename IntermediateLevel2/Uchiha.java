@@ -11,9 +11,13 @@ public class Uchiha extends Ninja {
         super(name, age, village);
     }
 
+    public Uchiha(String name, int age, String village, int missionNumber, TypeNinja rank) {
+        super(name, age, village, missionNumber, rank);
+    }
+
     //overwrite the method from Ninja class
     @Override
     public void specialAbility(){
-        System.out.println("My name is " + name + " and my power is fire");
+        System.out.println("My name is " + name + " and my power is fire and I have completed " + missionNumber + " missions");
     }
 }
