@@ -35,7 +35,7 @@ public class Main {
         sasuke.name = "Sasuke Uchiha";
         sasuke.village = "Konoha";
         sasuke.age = 18;
-        sasuke.shariganON();
+        sasuke.sharinganON();
 
         //calling the method, overwritten
         sasuke.chakra();
@@ -75,5 +75,12 @@ public class Main {
         //object 7(class abstract) with no args
         Senju hashirama = new Senju();
         hashirama.wisdom();
+
+        //object 8(multiple hereditary)
+        Hatake kakashi = new Hatake();
+        kakashi.sharinganON();
+        kakashi.anbuNinja();
+        kakashi.hokageON();
+
     }
 }
